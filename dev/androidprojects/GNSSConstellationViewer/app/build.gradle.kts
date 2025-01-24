@@ -27,6 +27,11 @@ android {
             )
         }
     }
+
+    defaultConfig {
+        manifestPlaceholders["MAPS_API_KEY"] = properties["MAPS_API_KEY"].toString()
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
